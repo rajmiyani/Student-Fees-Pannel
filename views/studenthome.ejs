@@ -1,0 +1,27 @@
+<h1>Study Home</h1>
+
+<h1><span style="color: brown;">Name : </span><%=data.name%></h1>
+<h1><span style="color: brown;">E-mail : </span><%=data.email%></h1>
+<h1><span style="color: brown;">Password : </span><%=data.password%></h1>
+<h1><span style="color: brown;">Mobile : </span><%=data.mobile%></h1>
+<h1><span style="color: brown;">Img : </span><img src="<%=data.img%>" width="100px" alt="">
+<h1><span style="color: brown;">Fees : </span><%=data.fees%></h1>
+<h1><span style="color: brown;">Course : </span><%=data.course%></h1>
+<h1><span style="color: brown;">ParentsMobile No. : </span><%=data.coursparentsMobile%></h1>
+<h1><span style="color: brown;">Address : </span><%=data.address%></h1>
+
+<%var total = 0%>
+<%for(var i of data.paid){%>
+    <%total += i.paid%>
+    <%}%>
+
+<h1>Total Paid : <%=total%></h1>
+<h1>Total Fees : <%=data.fees-total%></h1>
+
+<%for(var i of data.paid){%>
+    <div style="background-color: aque; margin: 30px;">
+        <h1>Paid : <%=i.paid%></h1>
+        <h1>Transaction Type :  : <%=i.transactionType%></h1>
+        <h1>Transaction Id :  : <%=i.transactionid%></h1>
+    </div>
+<%}%>
