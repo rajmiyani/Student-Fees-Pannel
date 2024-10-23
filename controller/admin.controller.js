@@ -35,6 +35,10 @@ module.exports = {
                 var token = jwt.sign({id:data._id},'devloper')
                 res.cookie('token',token)
                 res.redirect('/admin/dashboard')
+
+
+
+                
                 req.flash('success',"Login Successfully")
             }
             else{
