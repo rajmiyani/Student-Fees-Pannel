@@ -28,7 +28,7 @@ app.get('/',async(req,res) => {
     // var a = await adminModel.create({})
 })
 
-app.listen(4000,(err)=>{
+app.listen(3030,(err)=>{
     if(err){
         console.log(err);
     }else{
