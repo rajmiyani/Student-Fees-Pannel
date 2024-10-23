@@ -38,15 +38,15 @@ module.exports = {
 
 
 
-                
+
                 req.flash('success',"Login Successfully")
             }
             else{
-                res.redirect('/admin/')
+                res.redirect('/admin')
             }
         }
         else{
-           res.redirect('/admin/') 
+           res.redirect('/admin') 
         }
     },
     addstudentform:async(req,res)=>{

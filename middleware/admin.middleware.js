@@ -9,13 +9,13 @@ var verifytoken = async(req,res,next) => {
             if(data){
                 next()
             }else{
-                res.redirect('/admin/')
+                res.redirect('/admin')
             }
         }else{
-            res.redirect('/admin/')
+            res.redirect('/admin')
         }
     }else{
-        res.redirect('/admin/')
+        res.redirect('/admin')
     }
 }
 
